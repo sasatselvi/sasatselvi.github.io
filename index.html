@@ -1,20 +1,20 @@
 <!doctype html>
 <html lang="Ind">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, user-scalable=no"
-    />
-    <title>Website Pribadi Sasat Selvi</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <script src="java/script.js"></script>
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>Website Pribadi Sasat Selvi</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="java/script.js"></script>
+</head>
+<body>
+  <video autoplay muted loop id="background-video">
+    <source src="assets/video/background.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="content">
     <p></p>
     <div class="typewriter">
       <h1>Selvi Junita Sari</h1>
@@ -25,92 +25,52 @@
     </div>
     <section>
       <audio controls autoplay id="myAudio">
-        <source
-          src="assets/music/The PanasDalam Bank (Remastered 2018) - Dulu Kita Masih Remaja (Offical Video Audio).mp3"
-          type="audio/mp3"
-        />
+        <source src="assets/music/The PanasDalam Bank (Remastered 2018) - Dulu Kita Masih Remaja (Offical Video Audio).mp3" type="audio/mp3" />
         Your browser does not support the audio element.
       </audio>
-      <p>
-        Selamat Datang di website pribadi saya, saya adalah seorang Programmer.
-      </p>
+      <p>Selamat Datang di website pribadi saya, saya adalah seorang Programmer.</p>
 
-      <p>
-        Saya memiliki pasangan yang sangat cantik, lucu, dan juga menggemaskan.
-        yang bisa kamu kepoin instagramnya, di button bawah. tapi jangan diambil
-        yaaa, dia punyaku!!!
-      </p>
+      <p>Saya memiliki pasangan yang sangat cantik, lucu, dan juga menggemaskan. yang bisa kamu kepoin instagramnya, di button bawah. tapi jangan diambil yaaa, dia punyaku!!!</p>
       <button onclick="openInstagramApp()">
-        <img
-          src="assets/images/instagram.png"
-          alt="Instagram Logo"
-          class="instagram-logo"
-        />
+        <img src="assets/images/instagram.png" alt="Instagram Logo" class="instagram-logo" />
         <span>Pacarku Cantikku Duniaku</span>
       </button>
       <div class="photo-gallery" onclick="togglePhotoSize(event)">
         <div class="photo">
-          <img
-            src="assets/images/pantai.jpg"
-            alt="Photo 1"
-            data-src="assets/images/pantai.jpg"
-          />
+          <img src="assets/images/pantai.jpg" alt="Photo 1" data-src="assets/images/pantai.jpg" />
           <div class="love-effect">❤️</div>
-          <p class="photo-description">
-            <i class="fas fa-map-marker-alt"></i> Pantai Cibuaya <br />Ujung Genteng
-          </p>
+          <p class="photo-description"><i class="fas fa-map-marker-alt"></i> Pantai Cibuaya <br />Ujung Genteng</p>
         </div>
         <div class="photo">
-          <img
-            src="assets/images/pantai_malam.jpg"
-            alt="Photo 2"
-            data-src="assets/images/pantai_malam.jpg"
-          />
+          <img src="assets/images/pantai_malam.jpg" alt="Photo 2" data-src="assets/images/pantai_malam.jpg" />
           <div class="love-effect">❤️</div>
-          <p class="photo-description">
-            <i class="fas fa-map-marker-alt"></i> Pantai Cibuaya<br />Ujung Genteng
-          </p>
+          <p class="photo-description"><i class="fas fa-map-marker-alt"></i> Pantai Cibuaya<br />Ujung Genteng</p>
         </div>
         <div class="photo">
-          <img
-            src="assets/images/pantai_cibuaya.jpg"
-            alt="Photo 3"
-            data-src="assets/images/pantai_cibuaya.jpg"
-          />
+          <img src="assets/images/pantai_cibuaya.jpg" alt="Photo 3" data-src="assets/images/pantai_cibuaya.jpg" />
           <div class="love-effect">❤️</div>
-          <p class="photo-description">
-            <i class="fas fa-map-marker-alt"></i> Pantai Cibuaya<br />Ujung Genteng
-          </p>
+          <p class="photo-description"><i class="fas fa-map-marker-alt"></i> Pantai Cibuaya<br />Ujung Genteng</p>
         </div>
         <div class="photo">
-          <img
-            src="assets/images/photo_booth.jpg"
-            alt="Photo 4"
-            data-src="assets/images/photo_booth.jpg"
-          />
+          <img src="assets/images/photo_booth.jpg" alt="Photo 4" data-src="assets/images/photo_booth.jpg" />
           <div class="love-effect">❤️</div>
-          <p class="photo-description">
-            <i class="fas fa-map-marker-alt"></i> Photo Booth <br />Yogya Dramaga
-          </p>
+          <p class="photo-description"><i class="fas fa-map-marker-alt"></i> Photo Booth <br />Yogya Dramaga</p>
         </div>
         <div class="photo">
           <img src="assets/images/sunmori.jpg" alt="Photo 5" data-src="assets/images/sunmori.jpg" />
           <div class="love-effect">❤️</div>
-          <p class="photo-description">
-            <i class="fas fa-map-marker-alt"></i> Sentul Nirwarna <br />Bogor Utara
-          </p>
+          <p class="photo-description"><i class="fas fa-map-marker-alt"></i> Sentul Nirwarna <br />Bogor Utara</p>
         </div>
         <div class="photo">
           <img src="assets/images/background.jpg" alt="Photo 6" data-src="assets/images/background.jpg" />
           <div class="love-effect">❤️</div>
-          <p class="photo-description">
-            <i class="fas fa-map-marker-alt"></i> Sentul Nirwarna <br />Bogor Utara
-          </p>
+          <p class="photo-description"><i class="fas fa-map-marker-alt"></i> Sentul Nirwarna <br />Bogor Utara</p>
         </div>
       </div>
     </section>
     <div class="modal" id="modal">
       <img id="modal-img" src="" alt="Enlarged Photo" />
     </div>
-  </body>
+  </div>
+</body>
 </html>
