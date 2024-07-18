@@ -7,7 +7,7 @@ body {
 }
 
 .typewriter h1 {
-  color: white;
+
   font-family: monospace;
   text-align: center;
   overflow: hidden;
@@ -79,7 +79,7 @@ main {
 }
 
 .code {
-  background: #fafafa;
+
   border-radius: 5px;
   padding: 0.75rem;
   font-size: 1.1rem;
@@ -155,14 +155,13 @@ body {
 
   background-image: url("assets/images/background.jpg");
   background-repeat: repeat;
-  background-color: black;
-  color: white;
+
   background-position: center center;
 }
 
 header {
   background-color: #9bf09d;
-  color: white;
+
   text-align: center;
   padding: 2em;
 }
@@ -174,7 +173,7 @@ section {
   justify-content: center;
   padding: 1em;
   font-weight: bold;
-  color: white;
+
 }
 
 h2 {
@@ -298,7 +297,7 @@ button:hover {
 
 footer {
   background-color: #ff66b2;
-  color: white;
+
   text-align: center;
   padding: 1em;
 }
