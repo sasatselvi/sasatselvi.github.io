@@ -153,7 +153,7 @@ body {
   justify-content: center;
   align-items: center;
 
-  background-image: image("assets/images/background.jpg");
+  background-image: url("assets/images/background.jpg");
   background-repeat: repeat;
   background-color: black;
   color: white;
