@@ -7,7 +7,7 @@ body {
 }
 
 .typewriter h1 {
-  color: black;
+  color: white;
   font-family: monospace;
   text-align: center;
   overflow: hidden;
@@ -162,7 +162,7 @@ body {
 
 header {
   background-color: #9bf09d;
-  color: black;
+  color: white;
   text-align: center;
   padding: 2em;
 }
@@ -174,7 +174,7 @@ section {
   justify-content: center;
   padding: 1em;
   font-weight: bold;
-  color: black;
+  color: white;
 }
 
 h2 {
