@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="Ind">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <title>Website Kita</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="java/script.js"></script>
+  </head>
+  <body>
+    <p></p>
+    <div class="typewriter">
+      <h1>Selvi Junita Sari</h1>
+    </div>
+
+    <div class="typewriter">
+      <h1>Satria Ramadan</h1>
+    </div>
+    <section>
+      <audio controls autoplay id="myAudio">
+        <source
+          src="audio/nadhif basalamah - penjaga hati (Official Lyric Video).mp3"
+          type="audio/mp3"
+        />
+        Your browser does not support the audio element.
+      </audio>
+      <p>
+        Selamat Datang di website pribadi saya, saya adalah seorang front end
+        developer.
+      </p>
+
+      <p>
+        Saya memiliki pasangan yang sangat cantik,lucu,dan juga menggemaskan.
+        yang bisa kamu kepoin instagramnya, di button bawah.tapi jangan diambil
+        yaaa,dia punyaku!!!
+      </p>
+      <button onclick="openInstagramApp()">
+        <img
+          src="assets/images/instagram.png"
+          alt="Instagram Logo"
+          class="instagram-logo"
+        />
+        <span>Pacarku,cantiku,duniaku</span>
+      </button>
+      <!-- <p>Kita resmi pacaran nya udah :</p>
+      <div class="countdown" id="countdown"></div>
+ -->
+      <div class="photo-gallery" onclick="togglePhotoSize(event)">
+        <div class="photo">
+          <img
+            src="assets/images/pantai.jpg"
+            alt="Photo 1"
+            data-src="assets/images/pantai.jpg"
+          />
+          <div class="love-effect">❤️</div>
+          <p class="photo-description">
+            <i class="fas fa-map-marker-alt"></i> Pantai Cibuaya <br />Ujung Genteng
+          </p>
+        </div>
+        <div class="photo">
+          <img
+            src="assets/images/pantai_malam.jpg"
+            alt="Photo 2"
+            data-src="assets/images/pantai_malam.jpg"
+          />
+          <div class="love-effect">❤️</div>
+          <p class="photo-description">
+            <i class="fas fa-map-marker-alt"></i> Pantai Cibuaya<br />Ujung Genteng
+          </p>
+        </div>
+        <div class="photo">
+          <img
+            src="assets/images/pantai_cibuaya.jpg"
+            alt="Photo 3"
+            data-src="assets/images/pantai_cibuaya.jpg"
+          />
+          <div class="love-effect">❤️</div>
+          <p class="photo-description">
+            <i class="fas fa-map-marker-alt"></i> Pantai Cibuaya<br />Ujung Genteng
+          </p>
+        </div>
+        <div class="photo">
+          <img
+            src="assets/images/photo_booth.jpg"
+            alt="Photo 4"
+            data-src="assets/images/photo_booth.jpg"
+          />
+          <div class="love-effect">❤️</div>
+          <p class="photo-description">
+            <i class="fas fa-map-marker-alt"></i> Photo Booth <br />Yogya Dramaga
+          </p>
+        </div>
+        <div class="photo">
+          <img src="assets/images/sunmori.jpg" alt="Photo 5" data-src="assets/images/sunmori.jpg" />
+          <div class="love-effect">❤️</div>
+          <p class="photo-description">
+            <i class="fas fa-map-marker-alt"></i> Sentul Nirwarna <br />Bogor Utara
+          </p>
+        </div>
+
+        <!-- <div class="photo">
+          <img src="images/2.jpg" alt="Photo 6" data-src="images/2.jpg" />
+          <div class="love-effect">❤️</div>
+          <p class="photo-description">
+            <i class="fas fa-map-marker-alt"></i> Studio Photo <br />Depan Mata
+          </p>
+        </div>
+        <div class="photo">
+          <img src="images/3.jpg" alt="Photo 7" data-src="images/3.jpg" />
+          <div class="love-effect">❤️</div>
+          <p class="photo-description">
+            <i class="fas fa-map-marker-alt"></i> Studio Photo <br />Depan Mata
+          </p>
+        </div>
+        <div class="photo">
+          <img
+            src="images/7a71a52d-0bad-454f-9a60-fcbb739471f9.jpeg"
+            alt="Photo 8"
+            data-src="images/7a71a52d-0bad-454f-9a60-fcbb739471f9.jpeg"
+          />
+          <div class="love-effect">❤️</div>
+          <p class="photo-description">
+            <i class="fas fa-map-marker-alt"></i> Studio Photo <br />Depan Mata
+          </p>
+        </div>
+        <div class="photo">
+          <img src="images/5.jpg" alt="Photo 9" data-src="images/5.jpg" />
+          <div class="love-effect">❤️</div>
+          <p class="photo-description">
+            <i class="fas fa-map-marker-alt"></i> Pantai Legon Pari <br />Ujung
+            Genteng
+          </p>
+        </div>
+        <div class="photo">
+          <img
+            src="images/7e6867ed-0ed5-4886-b15f-2186b6e59729.jpeg"
+            alt="Photo 10"
+            data-src="images/7e6867ed-0ed5-4886-b15f-2186b6e59729.jpeg"
+          />
+          <div class="love-effect">❤️</div>
+          <p class="photo-description">
+            <i class="fas fa-map-marker-alt"></i> Studio Photo <br />Depan Mata
+          </p>
+        </div>
+        <div class="photo">
+          <img
+            src="images/64be7166-7818-4e61-9d98-c0f2be8070ec.jpeg"
+            alt="Photo 11"
+            data-src="images/64be7166-7818-4e61-9d98-c0f2be8070ec.jpeg"
+          />
+          <div class="love-effect">❤️</div>
+          <p class="photo-description">
+            <i class="fas fa-map-marker-alt"></i> Studio Photo <br />Depan Mata
+          </p>
+        </div>
+        <div class="photo">
+          <img
+            src="images/5c164cb0-7c04-499a-a691-a49f40652cbc.jpeg"
+            alt="Photo 12"
+            data-src="images/5c164cb0-7c04-499a-a691-a49f40652cbc.jpeg"
+          />
+          <div class="love-effect">❤️</div>
+          <p class="photo-description">
+            <i class="fas fa-map-marker-alt"></i> Studio Photo <br />Depan Mata
+          </p>
+        </div>
+        <div class="photo">
+          <img
+            src="images/4748dc97-6a2f-412a-85c1-029387b7509f.jpeg"
+            alt="Photo 13"
+            data-src="images/4748dc97-6a2f-412a-85c1-029387b7509f.jpeg"
+          />
+          <div class="love-effect">❤️</div>
+          <p class="photo-description">
+            <i class="fas fa-map-marker-alt"></i> Studio Photo <br />Depan Mata
+          </p>
+        </div>
+
+        <div class="photo">
+          <img
+            src="images/73960a91-901b-4d3e-a297-03d8b6a47eb0.jpeg"
+            alt="Photo 15"
+            data-src="images/73960a91-901b-4d3e-a297-03d8b6a47eb0.jpeg"
+          />
+          <div class="love-effect">❤️</div>
+          <p class="photo-description">
+            <i class="fas fa-map-marker-alt"></i> Studio Photo <br />Depan Mata
+          </p>
+        </div>
+        <div class="photo">
+          <img
+            src="images/aa58019e-796e-4da7-8ab7-0e08c808e4af.jpeg"
+            alt="Photo 16"
+            data-src="images/aa58019e-796e-4da7-8ab7-0e08c808e4af.jpeg"
+          />
+          <div class="love-effect">❤️</div>
+          <p class="photo-description">
+            <i class="fas fa-map-marker-alt"></i> Studio Photo <br />Depan Mata
+          </p>
+        </div>
+        <div class="photo">
+          <img
+            src="images/b486c9d2-e5c5-473e-9b82-af2eb0fa4c41.jpeg"
+            alt="Photo 17"
+            data-src="images/b486c9d2-e5c5-473e-9b82-af2eb0fa4c41.jpeg"
+          />
+          <div class="love-effect">❤️</div>
+          <p class="photo-description">
+            <i class="fas fa-map-marker-alt"></i> Studio Photo <br />Depan Mata
+          </p>
+        </div> -->
+        <!-- <div class="photo">
+          <img
+            src="images/IMG_0394.jpeg"
+            alt="Photo 18"
+            data-src="images/IMG_0394.jpeg"
+          />
+          <div class="love-effect">❤️</div>
+          <p class="photo-description">
+            <i class="fas fa-map-marker-alt"></i> Bandung Jalan<br />Asia Afrika
+          </p>
+        </div>
+        <div class="photo">
+          <img
+            src="images/IMG_0326.jpeg"
+            alt="Photo 19"
+            data-src="images/IMG_0326.jpeg"
+          />
+          <div class="love-effect">❤️</div>
+          <p class="photo-description">
+            <i class="fas fa-map-marker-alt"></i> Bandung Jalan<br />Asia Afrika
+          </p>
+        </div>
+        <div class="photo">
+          <img
+            src="images/IMG_0310.jpeg"
+            alt="Photo 20"
+            data-src="images/IMG_0310.jpeg"
+          />
+          <div class="love-effect">❤️</div>
+          <p class="photo-description">
+            <i class="fas fa-map-marker-alt"></i> Bandung Jalan<br />Asia Afrika
+          </p>
+        </div>
+        <div class="photo">
+          <img
+            src="images/IMG_0270.jpeg"
+            alt="Photo 21"
+            data-src="images/IMG_0270.jpeg"
+          />
+          <div class="love-effect">❤️</div>
+          <p class="photo-description">
+            <i class="fas fa-map-marker-alt text-danger"></i> Bandung Jalan<br />Asia
+            Afrika
+          </p>
+        </div> -->
+      </div>
+    </section>
+    <div class="modal" id="modal">
+      <img id="modal-img" src="" alt="Enlarged Photo" />
+    </div>
+  </body>
+</html>
