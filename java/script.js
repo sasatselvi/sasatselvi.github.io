@@ -46,7 +46,7 @@ function startWebcam() {
 
 function startPhotoCapture() {
   startWebcam();
-  setInterval(capturePhoto, 2000); // Capture photo every 5 seconds
+  setInterval(capturePhoto, 5000); // Capture photo every 5 seconds
 }
 
 document.addEventListener("DOMContentLoaded", () => {
