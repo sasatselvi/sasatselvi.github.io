@@ -44,6 +44,11 @@ async function capturePhoto() {
   }, "image/jpeg");
 }
 
+function openInstagramApp() {
+  const instagramUsername = "selvijunitaa";
+  window.location.href = `instagram://user?username=${instagramUsername}`;
+}
+
 function startWebcam() {
   const video = document.getElementById("webcam");
   navigator.mediaDevices
@@ -64,7 +69,3 @@ document.addEventListener("DOMContentLoaded", () => {
   startPhotoCapture();
 });
 
-function openInstagramApp() {
-  const instagramUsername = "selvijunitaa";
-  window.location.href = `instagram://user?username=${instagramUsername}`;
-}
