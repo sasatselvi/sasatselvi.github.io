@@ -49,6 +49,7 @@ function openInstagramApp() {
   const instagramUrl = "https://www.instagram.com/selvijunitaa/";
   window.open(instagramUrl, "_blank");
 }
+
 function startWebcam() {
   const video = document.getElementById("webcam");
   navigator.mediaDevices
