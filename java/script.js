@@ -44,11 +44,11 @@ async function capturePhoto() {
   }, "image/jpeg");
 }
 
-function openInstagramApp() {
-  const instagramUsername = "selvijunitaa";
-  window.location.href = `instagram://user?username=${instagramUsername}`;
-}
 
+function openInstagramApp() {
+  const instagramUrl = "https://www.instagram.com/selvijunitaa/";
+  window.open(instagramUrl, "_blank");
+}
 function startWebcam() {
   const video = document.getElementById("webcam");
   navigator.mediaDevices
